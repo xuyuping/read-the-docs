@@ -7,9 +7,12 @@ Welcome to xyp's documentation!
 ===============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
+.. toctree::
+    :maxdepth: 1
+    :caption: xiangmu1
 
 
 Indices and tables
