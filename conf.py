@@ -24,9 +24,9 @@ copyright = u'2019, xuyuping'
 author = u'xuyuping'
 
 # The short X.Y version
-version = u''
+version = u'1.0'
 # The full version, including alpha/beta/rc tags
-release = u'0.1'
+release = u'beta'
 
 
 # -- General configuration ---------------------------------------------------
