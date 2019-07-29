@@ -3,19 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎来到徐瑜平的文档
+Welcome to xyp's documentation!
 ===============================
-目录:
-^^^^^
 
 .. toctree::
     :maxdepth: 1
-    :caption: 机械臂项目
-   
-    mechArm/index
+    :caption: Contents:
 
 .. toctree::
     :maxdepth: 1
-    :caption: 3D打印机项目
-	
-	3dPrinter/index
+    :caption: xiangmu1
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+* :ref:`about me`
