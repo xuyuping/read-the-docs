@@ -1,4 +1,4 @@
-# read-the-docs
+# xyp-docs
 
 read the docs page
 
