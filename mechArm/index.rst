@@ -14,6 +14,7 @@
     :glob: 
 	
     mechArmStructure.md
-    mechArmTheory.md
     mechArmHardware.md
     mechArmSoftware.md
+    mechArmTheory.md
+	

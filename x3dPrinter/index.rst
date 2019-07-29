@@ -15,6 +15,7 @@ x3d打印机项目
     :glob: 
 	
     x3dPrinterStructure.md
-    x3dPrinterTheory.md
     x3dPrinterHardware.md
     x3dPrinterSoftware.md
+    x3dPrinterTheory.md
+	
