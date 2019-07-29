@@ -16,6 +16,6 @@
 
 .. toctree::
     :maxdepth: 1
-    :caption: 3D打印机项目
+    :caption: x3d打印机项目
 	
 	x3dPrinter/index
