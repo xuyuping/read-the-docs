@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎来到徐瑜平的文档
+欢迎来到老徐的文档
 ===============================
 目录:
 ^^^^^
@@ -14,9 +14,9 @@
    
     mechArm/index
 
-
 .. toctree::
     :maxdepth: 1
     :caption: x3d打印机项目
 	
-	x3dPrinter/index
+    x3dPrinter/index
+
