@@ -18,4 +18,4 @@
     :maxdepth: 1
     :caption: 3D打印机项目
 	
-	3dPrinter/index
+	x3dPrinter/index
