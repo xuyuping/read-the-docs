@@ -13,7 +13,7 @@
     :maxdepth: 1
     :glob: 
 	
-	机械臂结构.md
-	机械臂理论.md
-	机械臂硬件.md
-	机械臂软件.md
+    mechArmStructure.md
+    mechArmTheory.md
+    mechArmHardware.md
+    mechArmSoftware.md
