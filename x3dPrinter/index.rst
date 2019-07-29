@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-3D打印机项目
+x3d打印机项目
 ===============================
 
 这是一个易于制作的模块化3D打印机，可用于学习工业机器人相关理论，
