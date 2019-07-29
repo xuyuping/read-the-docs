@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'xyp'
+project = u'老徐的文档'
 copyright = u'2019, xuyuping'
 author = u'xuyuping'
 

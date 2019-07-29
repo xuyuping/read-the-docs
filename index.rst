@@ -20,3 +20,8 @@
 	
     x3dPrinter/index
 
+.. toctree::
+    :maxdepth: 1
+    :caption: MUVS3 Arduino开发教程
+	
+    MUVS3/index
