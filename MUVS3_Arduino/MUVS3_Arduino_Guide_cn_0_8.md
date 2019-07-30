@@ -62,7 +62,7 @@ trafficCard
 
 arduino_base_interface
 
-# FAQs
+# 常见问题
 
 1.Q:导入库后无法打开模块或模块都是黑框怎么办？
 

@@ -114,7 +114,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Mixly_example_card_detect.png)
 
-# FAQs
+# 常见问题
 
 1.导入库后无法打开模块或模块都是黑框怎么办？
  
