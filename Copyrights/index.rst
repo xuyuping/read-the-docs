@@ -3,10 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MUVS3 Mixly 教程
+产品版权与许可
 ===============================
-
-MU Vision Sensor 3 可以与Arduino连接进行开发。
 
 .. toctree::
     :maxdepth: 1
