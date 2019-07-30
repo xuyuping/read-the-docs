@@ -27,7 +27,7 @@
     MUVS3_Mixly/index
     MUVS3_Arduino/index
     MUVS3_Makecode/index
-    MUVS3_Micropython/index
+    MUVS3_MicroPython/index
 	
 .. toctree::
     :maxdepth: 1
