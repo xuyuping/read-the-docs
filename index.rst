@@ -23,11 +23,11 @@
 .. toctree::
     :maxdepth: 1
     :caption: MU Vision Sensor 3 开发教程
-    
+	
     MUVS3_Mixly/index
     MUVS3_Arduino/index
-	MUVS3_Makecode/index
-	MUVS3_Micropython/index
+    MUVS3_Makecode/index
+    MUVS3_Micropython/index
 	
 .. toctree::
     :maxdepth: 1
@@ -35,7 +35,7 @@
     
     MoonBot_Structure/index
     MoonBot_Hardware/index
-	MoonBot_App/index
-	MoonBot_Mixly/index
-	MoonBot_Arduino/index
-	MoonBot_Extention/index
+    MoonBot_App/index
+    MoonBot_Mixly/index
+    MoonBot_Arduino/index
+    MoonBot_Extention/index
