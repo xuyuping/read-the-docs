@@ -1,4 +1,4 @@
-# 1.Arduino库导入
+# Arduino库导入
 
 在Arduino官网下载最新的Arduino IDE 1.8.9
 
@@ -20,13 +20,13 @@
 
 ![](./images/MUVS3_Arduino_library_cn.png)
 
-# 2.Arduino硬件连接
+# Arduino硬件连接
 
 MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/MUVS3_pinout.png)
 
-## 2.1 I2C模式
+## I2C模式
 
 1）将模块左侧输出模式拨码开关1拨至下方，2拨至上方，切换至I2C模式；
 
@@ -34,7 +34,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 3）将模块输出接口SDA口接至Arduino对应的SDA口，SCL口接至Arduino对应的SCL口。
 
-## 2.2 串口模式
+## 串口模式
 
 1）将模块左侧输出模式拨码开关1、2都拨至下方，切换至串口模式；
 
@@ -42,7 +42,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 3）将模块输出接口RX口接至Arduino对应的TX口，TX口接至Arduino对应的RX口。
 
-# 3. 示例说明
+# 示例说明
 
 ball
 
@@ -62,7 +62,7 @@ trafficCard
 
 arduino_base_interface
 
-# 4. FAQs
+# FAQs
 
 1.Q:导入库后无法打开模块或模块都是黑框怎么办？
 
