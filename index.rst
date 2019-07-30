@@ -38,4 +38,16 @@
     MoonBot_App/index
     MoonBot_Mixly/index
     MoonBot_Arduino/index
-    MoonBot_Extention/index
+    MoonBot_Extension/index
+	
+.. toctree::
+    :maxdepth: 1
+    :caption: 版权与许可
+	
+    Copyrights/index
+	
+.. toctree::
+    :maxdepth: 1
+    :caption: 相关资源
+	
+    Sources/index

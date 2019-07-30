@@ -4,7 +4,7 @@
 最常用的3D打印机固件是marlin，最新的1.1.9版主要是适配ATmega2560处理器的各种主板和设备，现已停止更新。   
 跨入2.0-bugfix，开始支持32位处理器LPC1768和stm32等，速度更快，也加入了很多新功能。
 
-官网<http://www.marlinfw.org/>
+官网: <http://www.marlinfw.org/>
 
 ## 上位机软件
 常用的3D打印机上位机软件有Cura、Simplify3D等。
