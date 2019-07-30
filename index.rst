@@ -11,7 +11,7 @@
 .. toctree::
     :maxdepth: 1
     :caption: 机械臂项目
-   
+	
     mechArm/index
 
 .. toctree::
@@ -22,6 +22,20 @@
 
 .. toctree::
     :maxdepth: 1
-    :caption: MUVS3 Arduino开发教程
+    :caption: MU Vision Sensor 3 开发教程
+    
+    MUVS3_Mixly/index
+    MUVS3_Arduino/index
+	MUVS3_Makecode/index
+	MUVS3_Micropython/index
 	
-    MUVS3/index
+.. toctree::
+    :maxdepth: 1
+    :caption: MoonBot Kit 开发教程
+    
+    MoonBot_Structure/index
+    MoonBot_Hardware/index
+	MoonBot_App/index
+	MoonBot_Mixly/index
+	MoonBot_Arduino/index
+	MoonBot_Extention/index
