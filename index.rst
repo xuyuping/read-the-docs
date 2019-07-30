@@ -45,7 +45,7 @@
     :caption: 版权与许可
 	
     Copyrights/index_product
-	Copyrights/index_software
+    Copyrights/index_software
 	
 .. toctree::
     :maxdepth: 1
