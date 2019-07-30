@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-产品版权与许可
+软件许可
 ===============================
 
 .. toctree::
     :maxdepth: 1
     :glob: 
 	
-    MUVS3_Copyright.md
+    Copyright_Arduino.md
 	
