@@ -1,19 +1,13 @@
 # 传感器扩展库导入
-1.打开MakeCode并新建一个项目，在模块工具箱中点击“高级”——“扩展”；
+打开MakeCode并新建一个项目，在模块工具箱中点击“高级”——“扩展”；
 
-![](./images/MUVS3_Mixly_hardware.png)
+![](./images/MUVS3_Makecode_extension.png)
 
-2.搜索“mu-opensource/pxt-MuVisionSensorIII”，点击卡片完成添加；
+搜索“mu-opensource/pxt-MuVisionSensorIII”，点击卡片完成添加。
 
-![](./images/MUVS3_Mixly_import.png)
+![](./images/MUVS3_Makecode_extension_MU.png)
 
-3.选中库中名为MuVisionSensorIII.xml文件，点击打开。
-
-![](./images/MUVS3_Mixly_file.png)
-
-4.若在Mixly导航栏出现MuVisionSensorIII一栏，且下方出现导入自定义库成功，则导入成功。
-
-![](./images/MUVS3_Mixly_imported.png)
+![](./images/MUVS3_Makecode_imported.png)
 
 # Micro:bit硬件连接
 
@@ -47,15 +41,17 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 （1）Serial模式：根据Micro:bit与小MU视觉传感器的硬件连接自定义串口重定向模块中的TX、RX引脚号，示例中采用了Micro:bit的P12与P13。
 
-![](./images/Mixly_block_serial_init.png)
+![](./images/Makecode_block_serial_init.png)
 
 （2）I2C模式：Micro:bit与小MU视觉传感器的连接初始化为I2C模式。
+
+![](./images/Makecode_block_i2c_init.png)
 
 2.开启算法
 
 当前版本共有如下7种算法，每种算法的具体分类和返回结果详见小MU视觉传感器技术规格书文档。
 
-![](./images/Mixly_block_enable_algorithm.png)
+![](./images/Makecode_block_enable_algorithm.png)
 
 3.设置算法性能
 
@@ -67,19 +63,19 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 准确率优先：复杂场景情况下使用，识别速度稍慢，误报率低；当多类识别算法同时开启时，譬如形状卡片与交通卡片混合摆放识别时，请采用该模式，以消除不同组卡片间的误报。
 
-![](./images/Mixly_block_algorithm_performance.png)
+![](./images/Makecode_block_algorithm_performance.png)
 
 4.关闭/开启摄像头高帧率模式
 
 默认使用高帧率模式，相对普通模式有更快的识别速度，但功耗和发热量随之增加，可用于快速检测的场景，如需要低功耗使用则可关闭。
 
-![](./images/Mixly_block_highFPS.png)
+![](./images/Makecode_block_highFPS.png)
 
 5.设置摄像头白平衡
 
 当摄像头视野中出现大面积有颜色的物体时，摄像头会发生白平衡失真，产生偏色现象，通过事先锁定白平衡能够防止此问题的发生。在调用此编程模块时，需要将摄像头朝向白纸距离约20厘米进行测光，数秒后摄像头的白平衡会自动被锁定。
 
-![](./images/Mixly_block_setWB.png)
+![](./images/Makecode_block_setWB.png)
 
 6.设置摄像头数码变焦
 
@@ -89,7 +85,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 针对不同距离的物体通过试验测试合理设置数码变焦等级值可以取得较好的识别效果。
 
-![](./images/Mixly_block_setWB.png)
+![](./images/Makecode_block_setzoom.png)
 
 7.板载LED灯光设置
 
@@ -99,13 +95,13 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 默认设置：未检测到闪红灯，检测到则闪蓝灯。当进行颜色识别时，默认LED关闭。
 
-![](./images/Mixly_block_setLED.png)
+![](./images/Makecode_block_setLED.png)
 
 8.恢复模块默认设置  
 
 关闭所有算法，重置所有硬件设置
 
-![](./images/Mixly_block_setdefault.png)
+![](./images/Makecode_block_setdefault.png)
 
 ## 完整示例
 
@@ -116,7 +112,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 实验现象：未检测到球则视觉传感器闪红灯，控制台显示”ball undetected”。检测到球则视觉传感器闪蓝灯，控制台显示返回的坐标等信息。
 
-![](./images/Mixly_block_ball_detect.png)
+![](./images/Makecode_example_ball_detect.png)
 
 (2) 卡片识别
 
@@ -126,7 +122,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 实验现象：未检测到卡片则视觉传感器LED闪红灯，控制台显示”card undetected”。识别到则视觉传感器LED闪蓝灯，控制台显示返回的坐标信息和交通卡片的具体图案信息。
 
-![](./images/Mixly_block_card_detect.png)
+![](./images/Makecode_example_card_detect.png)
 
 (3) 颜色识别
 
@@ -136,7 +132,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 实验现象：视觉传感器始终不闪灯，控制台显示返回的通道值和颜色的类别。
 
-![](./images/Mixly_block_color_recognition.png)
+![](./images/Makecode_example_color_recognition.png)
 
 (4) 色块检测
 
@@ -146,7 +142,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 实验现象：未识别到时视觉传感器闪红灯，控制台显示”color block undetected”。识别到红色块则视觉传感器闪蓝灯，控制台显示获得的红色块坐标大小信息。
 
-![](./images/Mixly_block_color_block.png)
+![](./images/Makecode_example_color_block.png)
 
 (5)串口模式示例
 
@@ -158,36 +154,4 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 实验现象：未检测到数字卡片时视觉传感器闪红灯，检测到时闪蓝灯，当识别到卡片为1时Micro:bit显示数字1，识别到卡片2时显示数字2。
 
-![](./images/Mixly_block_color_block.png)
-
-# 常见问题
-
-1.导入库后无法打开模块或模块都是黑框怎么办？
- 
-请下载最新版Mixly程序，重新导入后即可。  
-
-2.我正确导入了库，下载了例程，但是模块没有反应，串口也没有任何输出怎么办？ 
-  
-(1) 检查接线是否正确，是否有接触不良的现象。
-
-(2) 检查模块背后的白灯是否常量，白灯不亮则表示电源口没有电压或电源线接线错误。
-
-(3) 检查输出模式拨码开关和地址选择拨码开关是否是拨至正确位置。
-
-(4) 模块从上电到初始化完成需要一段时间，建议在“设置”模块前加入一段不小于500ms的延时。  
- 
-(5) 点击模块Reset按钮，模块正面两个LED会短暂闪烁一次光。红光则表示当前模式为串口模式，绿光则表示当前模式为I2C模式。若光的颜色与输出模式拨码开关不符，则可能为拨码开关松动，重新拨动拨码开关至正确位置即可。  
-
-3.我下载了程序，串口有正确的内容输出，但是LED灯光不亮怎么办？  
-
-(1) 当算法为颜色识别算法时，程序默认会关闭LED，防止LED灯光照射使物体偏色。  
-
-(2) 设置中打开LED灯光，调节灯光亮度大于0。  
-
-4.按我对比了文档和Mixly库，发现有些功能Mixly库没有怎么办？  
-
-为了使库易于理解和操作，在Mixly库中去除了一些不常用的功能，简化了一些参数的设置方式。若这些省去的功能影响到了您的项目，请发邮件至摩图科技售后：support@morpx.com寻求技术支持和解决方案。  
-
-5.我发现烧录前一次程序的算法会对后一次程序的算法有影响，如：前一次烧录了颜色识别算法，后一次烧录球算法，就算没有识别到球LED也会显示识别到，而只烧录球算法则没有这种现象，怎么办？  
-
-这是因为前一种算法在程序结束后并没有被关闭导致的，可以在设置模块时加入“恢复默认设置”模块，或重新断电拨插模块即可。  
+![](./images/Makecode_example_serial.png)

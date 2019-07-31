@@ -32,6 +32,10 @@ Arduino官网 <https://www.arduino.cc/>
 
 Arduino中文社区 <https://www.arduino.cn/forum.php>
 
+DF创客社区 <http://mc.dfrobot.com.cn/>
+
+极客工坊 <https://www.geek-workshop.com/forum.php>
+
 Micro:bit:
 
 Micro:bit官网 <https://microbit.org/zh-CN/>
