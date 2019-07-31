@@ -70,6 +70,11 @@ MuVisionSensor.VisionBegin(vision_type)
 | VISION_NUM_CARD_DETECT     | 数字卡片检测 |
 | VISION_ALL                 | 开启所有算法 |
 
+|  表头   | 表头  |
+|  :----  | ----:  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+
 ```python
 from MuVisionSensor import *  #导入
 .... #省略初始化过程
