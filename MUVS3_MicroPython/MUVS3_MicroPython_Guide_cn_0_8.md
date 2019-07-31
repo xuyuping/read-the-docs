@@ -17,7 +17,7 @@ morpx官网：<http://mai.morpx.com/page.php?a=sensor-support>
 
 打开Mu Editor，在顶部选择模式为 BBC micro:bit，连接micro:bit后左下角显示“连接到新的micro:bit 设备”即可进行编程。单击顶部REPL按钮进入串口实时模式，micro:bit将返回固件版本信息。输入：
 
-```
+```python
 >>>from MuVisionSensor import *
 ```
 
