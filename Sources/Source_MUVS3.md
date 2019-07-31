@@ -36,8 +36,6 @@ Micro:bit:
 
 Micro:bit官网 <https://microbit.org/zh-CN/>
 
-
-
 MicroPython:
 
 MicroPython官网 <http://micropython.org/>
