@@ -3,7 +3,7 @@
 
 ![](./images/MUVS3_Makecode_extension.png)
 
-搜索“mu-opensource/pxt-MuVisionSensorIII”，点击卡片完成添加。
+搜索**mu-opensource/pxt-MuVisionSensorIII**，点击卡片完成添加。
 
 ![](./images/MUVS3_Makecode_extension_MU.png)
 
@@ -105,7 +105,8 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ## 完整示例
 
-(1)球体与人体检测
+**(1)球体与人体检测**
+
 初始程序：采用I2C连接，启用球体检测算法，其余设置为默认。
 
 循环程序：如果视觉传感器检测到球，会通过I2C向Micro:bit发送检测到的数据，Micro:bit会通过串口向电脑发送检测到的信息，否则循环显示未检测到球，人体检测同理。
@@ -114,7 +115,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Makecode_example_ball_detect.png)
 
-(2) 卡片识别
+**(2)卡片识别**
 
 初始程序：采用I2C连接，启用交通卡片识别算法，其余设置为默认。
 
@@ -124,7 +125,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Makecode_example_card_detect.png)
 
-(3) 颜色识别
+**(3) 颜色识别**
 
 初始程序：采用I2C连接，启用颜色识别算法，锁定摄像头白平衡防止偏色，其余设置为默认。
 
@@ -134,7 +135,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Makecode_example_color_recognition.png)
 
-(4) 色块检测
+**(4)色块检测**
 
 初始程序：采用I2C连接，启用色块检测算法，锁定摄像头白平衡防止偏色，其余设置为默认。
 
@@ -144,7 +145,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Makecode_example_color_block.png)
 
-(5)串口模式示例
+**(5)串口模式示例**
 
 拨动左侧输出模式拨码开关至串口模式，MU可采用串口连接Micro:bit。由于此模式下电脑无法与Micro:bit串口通讯，所以使用Micro:bit自带的点阵屏直接显示检测结果。
 
