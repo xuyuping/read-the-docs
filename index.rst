@@ -10,18 +10,6 @@
 
 .. toctree::
     :maxdepth: 1
-    :caption: 机械臂项目
-	
-    mechArm/index
-
-.. toctree::
-    :maxdepth: 1
-    :caption: x3d打印机项目
-	
-    x3dPrinter/index
-
-.. toctree::
-    :maxdepth: 1
     :caption: MU Vision Sensor 3 开发教程
 	
     MUVS3_Mixly/index
