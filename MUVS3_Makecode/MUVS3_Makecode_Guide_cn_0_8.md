@@ -107,7 +107,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Mixly_block_setdefault.png)
 
-9.获取算法识别结果
+## 完整示例
 
 (1)球体与人体检测
 初始程序：采用I2C连接，启用球体检测算法，其余设置为默认。
@@ -159,20 +159,6 @@ MU Vision Sensor 3的外设和接口如图所示：
 实验现象：未检测到数字卡片时视觉传感器闪红灯，检测到时闪蓝灯，当识别到卡片为1时Micro:bit显示数字1，识别到卡片2时显示数字2。
 
 ![](./images/Mixly_block_color_block.png)
-
-## 完整示例
-
-例1：颜色识别
-
-![](./images/Mixly_example_color_recognition.png)
-
-例2：球体检测
-
-![](./images/Mixly_example_ball_detect.png)
-
-例3：形状卡片检测
-
-![](./images/Mixly_example_card_detect.png)
 
 # 常见问题
 

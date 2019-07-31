@@ -1,20 +1,47 @@
-# 相关开发资源
+# 技术支持
 
-- 本手册中的信息仅适用于摩图科技公司所生产的小MU视觉传感器第3代产品（下称产品），本手册所描述内容仅适用于当前固件版本，新版本功能需要更新传感器固件，否则可能导致部分产品功能失效，版本更新不另行通告，请关注摩图科技官网。
+感谢您购买使用小MU 视觉传感器，我司会持续更新本产品的固件以及配套的库函数与例程，您可以从如下网址获取最新的技术资料：
 
-- 应仔细阅读和理解本手册中的各项条款，否则可能导致产品无法正常工作，检测效果变差，甚至产品损坏。
+GitHub：<https://github.com/mu-opensource/>
 
-- 在未经摩图科技确认及授权的情况下，不可私自维修或改装产品上的电子元件，造成损坏的将不予以保修。
+官网：<http://mai.morpx.com/page.php?a=sensor-support>
 
-- 严禁任何组织或个人进行芯片内部代码拷贝、破解等侵权行为，芯片内部所有代码信息均归属于摩图科技所有，对于任何侵权行为，摩图科技将采取法律措施予以维权。
+您在使用过程中有遇到技术方面的问题，可以通过电话0571-81958588或者email: support@morpx.com 与我司取得联系。
 
-- 本手册中所提及的技术方案、视觉算法、通讯协议均为摩图科技自主研发，任何组织或个人不得拷贝、抄袭、剽窃摩图科技的技术成果，对于任何侵权行为，摩图科技将采取法律措施予以维权。
+官方技术支持微信号
 
-- MORPX是杭州摩图科技有限公司的注册商标，MU是小MU视觉传感器的注册商标。
+![](./images/QRcode_WeChat.png)
 
-- 文本或图片中提到的所有商标名称、商标和注册商标均属其各自所有者的财产，特此声明。
+官方技术支持QQ号
 
-- 本手册仅供指定公司客户或个人用户内部资料使用，在产品正式上市或发布之前，使用方应对本产品及手册采取保密措施，在未经摩图科技授权的情况下，不得将产品及本手册传阅至第三方公司或个人。
+![](./images/QRcode_QQ.png)
+
+官方技术交流QQ群号
+
+![](./images/QRcode_QQ_group.png)
+
+# 平台链接
+
+Mixly:
+
+Mixly官网 <http://mixly.org/>
+
+Arduino：
+
+Arduino官网 <https://www.arduino.cc/>
+
+Arduino中文社区 <https://www.arduino.cn/forum.php>
+
+Micro:bit:
+
+Micro:bit官网 <https://microbit.org/zh-CN/>
 
 
-版权归 © 2019 摩图科技所有。保留所有权利。
+
+MicroPython:
+
+MicroPython官网 <http://micropython.org/>
+
+MicroPython中文社区 <http://www.micropython.org.cn/bbs/forum.php>
+
+Mu IDE <https://codewith.mu/>
