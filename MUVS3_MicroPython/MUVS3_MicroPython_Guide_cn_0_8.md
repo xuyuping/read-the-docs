@@ -17,7 +17,9 @@ morpx官网：<http://mai.morpx.com/page.php?a=sensor-support>
 
 打开Mu Editor，在顶部选择模式为 BBC micro:bit，连接micro:bit后左下角显示“连接到新的micro:bit 设备”即可进行编程。单击顶部REPL按钮进入串口实时模式，micro:bit将返回固件版本信息。输入：
 
+```
 >>>from MuVisionSensor import *
+```
 
 导入传感器后即可使用MuVisonSensor类中的所有公开API
 
@@ -57,19 +59,19 @@ MuVisionSensor.VisionBegin(vision_type)
 
 目前支持的vision_type有：
 
-| vision_type | 算法名称 |
-| ---- | ---- |
-| VISION_COLOR_DETECT | 颜色检测 |
-| VISION_COLOR_RECOGNITION | 颜色识别 |
-| VISION_BALL_DETECT | 球体检测 |
-| VISION_BODY_DETECT | 人体检测 |
-| VISION_SHAPE_CARD_DETECT | 形状卡片检测 |
+| vision_type                | 算法名称     |
+| -------------------------- | ------------ |
+| VISION_COLOR_DETECT        | 颜色检测     |
+| VISION_COLOR_RECOGNITION   | 颜色识别     |
+| VISION_BALL_DETECT         | 球体检测     |
+| VISION_BODY_DETECT         | 人体检测     |
+| VISION_SHAPE_CARD_DETECT   | 形状卡片检测 |
 | VISION_TRAFFIC_CARD_DETECT | 交通卡片检测 |
-| VISION_NUM_CARD_DETECT | 数字卡片检测 |
-| VISION_ALL | 开启所有算法 |
+| VISION_NUM_CARD_DETECT     | 数字卡片检测 |
+| VISION_ALL                 | 开启所有算法 |
 
 ```python
-from MuVisionSensor import *  
+from MuVisionSensor import *  #导入
 .... #省略初始化过程
 mu.VisionBegin(VISION_COLOR_DETECT)  #开启颜色检测算法
 mu.VisionBegin(VISION_SHAPE_CARD_DETECT | VISION_BALL_DETECT) #同时开启形状卡片检测和球体检测算法
