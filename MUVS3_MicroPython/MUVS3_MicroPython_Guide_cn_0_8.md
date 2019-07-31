@@ -1,19 +1,29 @@
-# 传感器扩展库导入
-1.打开MakeCode并新建一个项目，在模块工具箱中点击“高级”——“扩展”；
+# 配置Mu Editor和Micro:bit
+Mu Editor是一款具有友好GUI界面的MicroPython集成开发工具，包含了代码编辑、烧录、REPL终端、串口绘图器等功能。通过Micro:bit主板控制小MU视觉传感器，需要使用包含了MuVisionSensor传感器的MicroPython固件，请按以下步骤进行设置：
 
-![](./images/MUVS3_Mixly_hardware.png)
+（1）下载Micro:bit固件：
 
-2.搜索“mu-opensource/pxt-MuVisionSensorIII”，点击卡片完成添加；
+GitHub：<https://github.com/mu-opensource/MuVisionSensorIII-MicroPython>
 
-![](./images/MUVS3_Mixly_import.png)
+morpx官网：<http://mai.morpx.com/page.php?a=sensor-support>
 
-3.选中库中名为MuVisionSensorIII.xml文件，点击打开。
+（2）更新Micro:bit固件：
 
-![](./images/MUVS3_Mixly_file.png)
+将Micro:bit通过USB线连接电脑，出现Micro:bit的磁盘，将下载的固件microbit-micropython-MuVisionSensor-0.8.0.hex 文件拖入磁盘中，Micro:bit将自动更新固件并重启。
 
-4.若在Mixly导航栏出现MuVisionSensorIII一栏，且下方出现导入自定义库成功，则导入成功。
+（3）下载并安装Mu Editor：<https://codewith.mu/>
 
-![](./images/MUVS3_Mixly_imported.png)
+（4）导入传感器
+
+打开Mu Editor，在顶部选择模式为 BBC micro:bit，连接micro:bit后左下角显示“连接到新的micro:bit 设备”即可进行编程。单击顶部REPL按钮进入串口实时模式，micro:bit将返回固件版本信息。输入：
+
+>>>from MuVisionSensor import *
+
+导入传感器后即可使用MuVisonSensor类中的所有公开API
+
+*MuVisionSensor传感器中关键字的自动补全仅在REPL模式下可用
+
+![](./images/MUVS3_pinout.png)
 
 # Micro:bit硬件连接
 
@@ -21,43 +31,51 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/MUVS3_pinout.png)
 
-## I2C模式
-
 （1）将传感器左侧输出模式拨码开关1拨至下方，2拨至上方；
 
 （2）将传感器输出接口SDA引脚（P1）和SCL引脚（P2）接至Micro:bit 对应的 SDA引脚（P20）与SCL引脚（P19），同时将P3接地，P4接电源（3.3-5V）；
 
 （3）将传感器的地址选择拨码开关拨至对应位（默认地址0x60则 1、2都在下方，不推荐修改此设置）。
 
-## 串口模式
+*目前仅支持I2C模式
 
-（1）将传感器左侧输出模式拨码开关1、2均拨至下方；
+# 3.API使用说明
 
-（2）将传感器输出接口RX引脚（P1）接至Micro:bit 对应的TX 引脚， TX引脚（P2）口接至Micro:bit 对应的RX 引脚，同时将P3接地，P4接电源（3.3-5V）；
+**初始化传感器**
 
-（3）将传感器的地址选择拨码开关拨至对应位（默认地址0x60则 1、2都在下方，不推荐修改此设置）。
+1.调用MuVisionSensor(adress)创建一个对象mu，并指定传感器地址，指定的地址要与地址选择拨码开关的设置保持一致
 
-*当前版本中串口模式下Micro:bit将无法通过USB串口打印调试信息；串口波特率固定为9600。*
+2.调用begin()函数，启动传感器
 
-# 模块使用介绍
+**开启算法**
 
-## 模块说明
+API：
 
-1.初始化模块
+```python
+MuVisionSensor.VisionBegin(vision_type)
+```
 
-（1）Serial模式：根据Micro:bit与小MU视觉传感器的硬件连接自定义串口重定向模块中的TX、RX引脚号，示例中采用了Micro:bit的P12与P13。
+目前支持的vision_type有：
 
-![](./images/Mixly_block_serial_init.png)
+| vision_type | 算法名称 |
+| ---- | ---- |
+| VISION_COLOR_DETECT | 颜色检测 |
+| VISION_COLOR_RECOGNITION | 颜色识别 |
+| VISION_BALL_DETECT | 球体检测 |
+| VISION_BODY_DETECT | 人体检测 |
+| VISION_SHAPE_CARD_DETECT | 形状卡片检测 |
+| VISION_TRAFFIC_CARD_DETECT | 交通卡片检测 |
+| VISION_NUM_CARD_DETECT | 数字卡片检测 |
+| VISION_ALL | 开启所有算法 |
 
-（2）I2C模式：Micro:bit与小MU视觉传感器的连接初始化为I2C模式。
+```python
+from MuVisionSensor import *  
+.... #省略初始化过程
+mu.VisionBegin(VISION_COLOR_DETECT)  #开启颜色检测算法
+mu.VisionBegin(VISION_SHAPE_CARD_DETECT | VISION_BALL_DETECT) #同时开启形状卡片检测和球体检测算法
+```
 
-2.开启算法
-
-当前版本共有如下7种算法，每种算法的具体分类和返回结果详见小MU视觉传感器技术规格书文档。
-
-![](./images/Mixly_block_enable_algorithm.png)
-
-3.设置算法性能
+**设置算法性能**
 
 不同算法性能下识别的速度与准确率会有所差异，可根据实际的应用需要选择合适的性能参数。
 
@@ -69,19 +87,19 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Mixly_block_algorithm_performance.png)
 
-4.关闭/开启摄像头高帧率模式
+**设置摄像头帧率模式**
 
 默认使用高帧率模式，相对普通模式有更快的识别速度，但功耗和发热量随之增加，可用于快速检测的场景，如需要低功耗使用则可关闭。
 
 ![](./images/Mixly_block_highFPS.png)
 
-5.设置摄像头白平衡
+**设置摄像头白平衡**
 
 当摄像头视野中出现大面积有颜色的物体时，摄像头会发生白平衡失真，产生偏色现象，通过事先锁定白平衡能够防止此问题的发生。在调用此编程模块时，需要将摄像头朝向白纸距离约20厘米进行测光，数秒后摄像头的白平衡会自动被锁定。
 
 ![](./images/Mixly_block_setWB.png)
 
-6.设置摄像头数码变焦
+**设置摄像头数码变焦**
 
 数码变焦等级越大可检测的距离越远，但视野范围会变窄。
 
@@ -91,7 +109,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Mixly_block_setWB.png)
 
-7.板载LED灯光设置
+**板载LED灯光设置**
 
 小MU视觉传感器正面板载的两颗LED灯每闪烁一次表示执行一帧图像识别。
 
@@ -101,13 +119,13 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Mixly_block_setLED.png)
 
-8.恢复模块默认设置  
+**恢复模块默认设置**
 
 关闭所有算法，重置所有硬件设置
 
 ![](./images/Mixly_block_setdefault.png)
 
-9.获取算法识别结果
+**获取算法识别结果**
 
 (1)球体与人体检测
 初始程序：采用I2C连接，启用球体检测算法，其余设置为默认。
@@ -117,91 +135,3 @@ MU Vision Sensor 3的外设和接口如图所示：
 实验现象：未检测到球则视觉传感器闪红灯，控制台显示”ball undetected”。检测到球则视觉传感器闪蓝灯，控制台显示返回的坐标等信息。
 
 ![](./images/Mixly_block_ball_detect.png)
-
-(2) 卡片识别
-
-初始程序：采用I2C连接，启用交通卡片识别算法，其余设置为默认。
-
-循环程序：如果视觉传感器检测到交通卡片，会通过I2C向Micro:bit发送检测到的数据，Micro:bit会通过串口向电脑发送识别到的位置和类型信息，否则循环显示未识别，其他类型的卡片识别同理。
-
-实验现象：未检测到卡片则视觉传感器LED闪红灯，控制台显示”card undetected”。识别到则视觉传感器LED闪蓝灯，控制台显示返回的坐标信息和交通卡片的具体图案信息。
-
-![](./images/Mixly_block_card_detect.png)
-
-(3) 颜色识别
-
-初始程序：采用I2C连接，启用颜色识别算法，锁定摄像头白平衡防止偏色，其余设置为默认。
-
-循环程序：视觉传感器识别坐标(50,50)处的颜色，通过I2C向Micro:bit发送检测到的数据，Micro:bit会通过串口向电脑发送识别到的通道信息和颜色类别。
-
-实验现象：视觉传感器始终不闪灯，控制台显示返回的通道值和颜色的类别。
-
-![](./images/Mixly_block_color_recognition.png)
-
-(4) 色块检测
-
-初始程序：采用I2C连接，启用色块检测算法，锁定摄像头白平衡防止偏色，其余设置为默认。
-
-循环程序：如果视觉传感器检测到红色块，会通过I2C向Micro:bit发送检测到的数据，Micro:bit会通过串口向电脑发送识别到的位置和类型信息，否则循环显示未检测到。
-
-实验现象：未识别到时视觉传感器闪红灯，控制台显示”color block undetected”。识别到红色块则视觉传感器闪蓝灯，控制台显示获得的红色块坐标大小信息。
-
-![](./images/Mixly_block_color_block.png)
-
-(5)串口模式示例
-
-拨动左侧输出模式拨码开关至串口模式，MU可采用串口连接Micro:bit。由于此模式下电脑无法与Micro:bit串口通讯，所以使用Micro:bit自带的点阵屏直接显示检测结果。
-
-初始程序：重新定义串口引脚到P14和P13，采用串口连接，启用数字卡片识别算法，其余设置为默认。
-
-循环程序：如果视觉传感器检测到数字卡片，会通过串口向Micro:bit发送数据，使用Micro:bit自带的LED显示识别到的数字，以1和2为示例，其他卡片类型同理。
-
-实验现象：未检测到数字卡片时视觉传感器闪红灯，检测到时闪蓝灯，当识别到卡片为1时Micro:bit显示数字1，识别到卡片2时显示数字2。
-
-![](./images/Mixly_block_color_block.png)
-
-## 完整示例
-
-例1：颜色识别
-
-![](./images/Mixly_example_color_recognition.png)
-
-例2：球体检测
-
-![](./images/Mixly_example_ball_detect.png)
-
-例3：形状卡片检测
-
-![](./images/Mixly_example_card_detect.png)
-
-# 常见问题
-
-1.导入库后无法打开模块或模块都是黑框怎么办？
- 
-请下载最新版Mixly程序，重新导入后即可。  
-
-2.我正确导入了库，下载了例程，但是模块没有反应，串口也没有任何输出怎么办？ 
-  
-(1) 检查接线是否正确，是否有接触不良的现象。
-
-(2) 检查模块背后的白灯是否常量，白灯不亮则表示电源口没有电压或电源线接线错误。
-
-(3) 检查输出模式拨码开关和地址选择拨码开关是否是拨至正确位置。
-
-(4) 模块从上电到初始化完成需要一段时间，建议在“设置”模块前加入一段不小于500ms的延时。  
- 
-(5) 点击模块Reset按钮，模块正面两个LED会短暂闪烁一次光。红光则表示当前模式为串口模式，绿光则表示当前模式为I2C模式。若光的颜色与输出模式拨码开关不符，则可能为拨码开关松动，重新拨动拨码开关至正确位置即可。  
-
-3.我下载了程序，串口有正确的内容输出，但是LED灯光不亮怎么办？  
-
-(1) 当算法为颜色识别算法时，程序默认会关闭LED，防止LED灯光照射使物体偏色。  
-
-(2) 设置中打开LED灯光，调节灯光亮度大于0。  
-
-4.按我对比了文档和Mixly库，发现有些功能Mixly库没有怎么办？  
-
-为了使库易于理解和操作，在Mixly库中去除了一些不常用的功能，简化了一些参数的设置方式。若这些省去的功能影响到了您的项目，请发邮件至摩图科技售后：support@morpx.com寻求技术支持和解决方案。  
-
-5.我发现烧录前一次程序的算法会对后一次程序的算法有影响，如：前一次烧录了颜色识别算法，后一次烧录球算法，就算没有识别到球LED也会显示识别到，而只烧录球算法则没有这种现象，怎么办？  
-
-这是因为前一种算法在程序结束后并没有被关闭导致的，可以在设置模块时加入“恢复默认设置”模块，或重新断电拨插模块即可。  
