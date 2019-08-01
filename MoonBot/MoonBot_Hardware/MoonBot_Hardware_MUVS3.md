@@ -24,7 +24,7 @@
 
 接口：PH2.0 4P
 
-接口图：
+## 接口
 
 ![](./images/pinout_MUVS3.png)
 
