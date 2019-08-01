@@ -20,6 +20,8 @@
 
 测速器：光电编码器
 
+接口：PH2.0 2P + PH2.0 4P
+
 **接口图：**
 
 ![](./images/pinout_motor.png)
