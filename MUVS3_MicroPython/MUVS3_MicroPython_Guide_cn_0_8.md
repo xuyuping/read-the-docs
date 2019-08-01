@@ -18,14 +18,14 @@ morpx官网：<http://mai.morpx.com/page.php?a=sensor-support>
 打开Mu Editor，在顶部选择模式为 BBC micro:bit，连接micro:bit后左下角显示“连接到新的micro:bit 设备”即可进行编程。单击顶部REPL按钮进入串口实时模式，micro:bit将返回固件版本信息。输入：
 
 ```python
->>>from MuVisionSensor import *
+>>> from MuVisionSensor import *
 ```
 
 导入传感器后即可使用MuVisonSensor类中的所有公开API
 
 *MuVisionSensor传感器中关键字的自动补全仅在REPL模式下可用
 
-![](./images/MUVS3_pinout.png)
+![](./images/MicroPython_imported.png)
 
 # Micro:bit硬件连接
 
@@ -79,8 +79,10 @@ MuVisionSensor.VisionBegin(vision_type)
 
 | VISION_ALL                 | 开启所有算法 |
 
+示例：
+
 ```python
-from MuVisionSensor import *  #导入
+from MuVisionSensor import *  #导入库
 .... #省略初始化过程
 mu.VisionBegin(VISION_COLOR_DETECT)  #开启颜色检测算法
 mu.VisionBegin(VISION_SHAPE_CARD_DETECT | VISION_BALL_DETECT) #同时开启形状卡片检测和球体检测算法
@@ -88,61 +90,196 @@ mu.VisionBegin(VISION_SHAPE_CARD_DETECT | VISION_BALL_DETECT) #同时开启�
 
 **设置算法性能**
 
-不同算法性能下识别的速度与准确率会有所差异，可根据实际的应用需要选择合适的性能参数。
+API:
 
-速度优先：简单环境下使用，识别速度快，误报率稍高；
+```
+MuVisionSensor.VisionSetLevel(vision_type, level)
+```
 
-性能均衡：默认模式；
+可选的vision_type同上
+可选的level有
 
-准确率优先：复杂场景情况下使用，识别速度稍慢，误报率低；当多类识别算法同时开启时，譬如形状卡片与交通卡片混合摆放识别时，请采用该模式，以消除不同组卡片间的误报。
+LevelDefault 	                 默认
 
-![](./images/Mixly_block_algorithm_performance.png)
+LevelSpeed   		         速度优先
+
+LevelBalance 		         平衡
+
+LevelAccuracy		         准确性优先
+
+示例：
+
+```
+mu.VisionSetLevel(VISION_BALL_DETECT, LevelSpeed)
+```
+
+获取算法性能
+
+```
+mu.VisionSetLevel(vision_type)
+```
+
+返回值0~3代表四种算法性能
 
 **设置摄像头帧率模式**
 
-默认使用高帧率模式，相对普通模式有更快的识别速度，但功耗和发热量随之增加，可用于快速检测的场景，如需要低功耗使用则可关闭。
+高帧率模式下识别速度增加，同时功耗增加
 
-![](./images/Mixly_block_highFPS.png)
+API:
+
+```
+MuVisionSensor.CameraSetFPS(mode)
+```
+
+可选的mode有：
+
+FPSNormal	          正常模式
+
+FPSHigh  	          高帧率模式
+
+获取摄像头帧率模式
+
+API:
+
+```
+MuVisionSensor.CameraGetFPS()
+```
+
+返回值为 0(FPSNormal)或1(FPSHigh)
 
 **设置摄像头白平衡**
 
-当摄像头视野中出现大面积有颜色的物体时，摄像头会发生白平衡失真，产生偏色现象，通过事先锁定白平衡能够防止此问题的发生。在调用此编程模块时，需要将摄像头朝向白纸距离约20厘米进行测光，数秒后摄像头的白平衡会自动被锁定。
+调节因为外界光源变化而引起的图像偏色
 
-![](./images/Mixly_block_setWB.png)
+API:
+
+```
+MuVisionSensor.CameraSetAwb(mode)
+```
+
+可选的mode有：
+
+AutoWhiteBalance		自动白平衡
+
+LockWhiteBalance		锁定白平衡
+
+WhiteLight      		白光模式
+
+YellowLight     		黄光模式
+
+获取摄像头白平衡模式
+
+API:
+
+```
+MuVisionSensor.CameraGetAwb()
+```
+
+返回值为 0~3，对应4种白平衡模式
 
 **设置摄像头数码变焦**
 
-数码变焦等级越大可检测的距离越远，但视野范围会变窄。
+API:
 
-数码变焦等级1(距离近,视野广)~数码变焦等级5(距离远,视野窄)。
+```
+MuVisionSensor.CameraSetZoom(mode)
+```
 
-针对不同距离的物体通过试验测试合理设置数码变焦等级值可以取得较好的识别效果。
+可选的mode有：
 
-![](./images/Mixly_block_setWB.png)
+ZoomDefault		        默认
+
+Zoom1      		        变焦模式1
+
+Zoom2      		        变焦模式2
+
+Zoom3      		        变焦模式3
+
+Zoom4      		        变焦模式4
+
+Zoom5      		        变焦模式5
+
+获取摄像头变焦模式
+
+API:
+
+```
+MuVisionSensor.CameraGetZoom()
+```
+
+返回值为 0~5，对应6种白平衡模式
 
 **板载LED灯光设置**
 
-小MU视觉传感器正面板载的两颗LED灯每闪烁一次表示执行一帧图像识别。
+API:
 
-可通过设置识别到目标与未识别到目标时灯光的颜色来获得反馈。
+```
+MuVisionSensor.LedSetColor(led, detected_color, undetected_color, level)
+```
 
-默认设置：未检测到闪红灯，检测到则闪蓝灯。当进行颜色识别时，默认LED关闭。
+参数说明：
 
-![](./images/Mixly_block_setLED.png)
+led：要配置的LED灯，可选值为
+
+Led1	板载LED1
+
+Led2	板载LED2
+
+detected_color：检测到结果时的颜色，可选值为
+
+LedClose 		LED关
+LedRed   		红色
+LedGreen 	   	绿色
+LedYellow		黄色
+LedBlue  		蓝色
+LedPurple 		紫色
+LedCyan  	    青色
+LedWhite 		白色
+
+undetected_color：未检测到结果时的颜色，可选值同上
+
+level：亮度值，可输入0~15的数字，数值越大越亮
 
 **恢复模块默认设置**
 
 关闭所有算法，重置所有硬件设置
 
-![](./images/Mixly_block_setdefault.png)
+API:
+```
+MuVisionSensor.SensorSetDefault()
+```
+
+**重启传感器**
+
+API:
+```
+MuVisionSensor.SensorSetRestart()
+```
 
 **获取算法识别结果**
 
-(1)球体与人体检测
-初始程序：采用I2C连接，启用球体检测算法，其余设置为默认。
+API:
+```
+MuVisionSensor.GetValue(vision_type, object_inf)
+```
+vision_type的可选值同上
 
-循环程序：如果视觉传感器检测到球，会通过I2C向Micro:bit发送检测到的数据，Micro:bit会通过串口向电脑发送检测到的信息，否则循环显示未检测到球，人体检测同理。
+object_inf的可选值为：
 
-实验现象：未检测到球则视觉传感器闪红灯，控制台显示”ball undetected”。检测到球则视觉传感器闪蓝灯，控制台显示返回的坐标等信息。
+Status     	        	检测状态，0代表没检测到，1代表检测到
 
-![](./images/Mixly_block_ball_detect.png)
+XValue     	           	目标的横向坐标
+
+YValue     		        目标的纵向坐标
+
+WidthValue 		        目标的宽度
+
+HeightValue		        目标的高度
+
+Label      	            目标的标签
+
+RValue     		        红色通道值（颜色识别模式）
+
+GValue     		        绿色通道值（颜色识别模式）
+
+BValue     		        蓝色通道值（颜色识别模式）
