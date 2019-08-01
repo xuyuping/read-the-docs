@@ -12,9 +12,9 @@
 
 将下载的MUVisionSensorIII-1.1.6解压后放入该文件夹则完成导入。
 
-打开Arduino IDE，选择顶部的“工具 - 开发板”，常用开发板为Arduino Uno。如果使用MoonBot主控，则选开发板为Arduino Mega 2560，
+打开Arduino IDE，选择顶部的“工具 - 开发板”，常用开发板为Arduino Uno。
 
-并选择处理器为ATmega 1280。连接开发板后选择相应端口则完成Arduino开发板的连接。
+如果使用MoonBot主控，则选开发板为Arduino Mega 2560，并选择处理器为ATmega 1280。连接开发板后选择相应端口则完成Arduino开发板的连接。
 
 如果成功导入了开发板兼容的库，选择顶部的“文件 - 示例 - 第三方示例 - MU Vision Sensor III”可以打开官方示例程序。
 
