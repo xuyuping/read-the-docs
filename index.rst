@@ -21,8 +21,8 @@
     :maxdepth: 1
     :caption: MoonBot Kit 开发教程
     
-    MoonBot_Structure/index
     MoonBot_Hardware/index
+    MoonBot_Structure/index
     MoonBot_App/index
     MoonBot_Mixly/index
     MoonBot_Arduino/index

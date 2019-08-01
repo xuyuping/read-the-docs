@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MoonBot 搭建教程
+MoonBot 形态指南
 ===============================
 
 MU Vision Sensor 3 可以与Arduino连接进行开发。
@@ -12,5 +12,6 @@ MU Vision Sensor 3 可以与Arduino连接进行开发。
     :maxdepth: 1
     :glob: 
 	
-    MUVS3_Arduino_Guide_cn_0_8.md
-	
+    MoonRover_Guide_cn.md
+    MoonMech_Guide_cn.md
+    MoonBot_Guide_cn.md

@@ -1,17 +1,18 @@
 # Mixly库导入
-1.打开Mixly软件，选择主控设备，常用Arduino Uno。如果使用MoonBot主控，则选择Arduino Mega（atmega 1280），选择设备的COM口。
+
+打开Mixly软件，选择主控设备，常用Arduino Uno。如果使用MoonBot主控，则选择Arduino Mega（atmega 1280），选择设备的COM口。
 
 ![](./images/MUVS3_Mixly_hardware.png)
 
-2.点击导入库。
+点击导入库。
 
 ![](./images/MUVS3_Mixly_import.png)
 
-3.选中库中名为MuVisionSensorIII.xml文件，点击打开。
+选中库中名为MuVisionSensorIII.xml文件，点击打开。
 
 ![](./images/MUVS3_Mixly_file.png)
 
-4.若在Mixly导航栏出现MuVisionSensorIII一栏，且下方出现导入自定义库成功，则导入成功。
+若在Mixly导航栏出现MuVisionSensorIII一栏，且下方出现导入自定义库成功，则导入成功。
 
 ![](./images/MUVS3_Mixly_imported.png)
 
@@ -41,7 +42,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ## 模块说明
 
-**1.初始化模块**
+**初始化模块**
 
 (1)硬件串口：视觉传感器使用串口模式，连接主控的硬件串口时主控初始化，该串口为主控和电脑端的串口通信，用于视觉会占用，电脑端打印字符会错乱或通信异常；
 
@@ -55,36 +56,36 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ![](./images/Mixly_block_i2c_init.png)
 
-**2.开启算法**
+**开启算法**
 
 ![](./images/Mixly_block_enable_algorithm.png)
 
-**3.设置算法性能**
+**设置算法性能**
 
 ![](./images/Mixly_block_algorithm_performance.png)
 
-**4.开启摄像头高帧率模式**
+**开启摄像头高帧率模式**
 
 识别速度增加，同时功耗、发热量增加。
 
 ![](./images/Mixly_block_highFPS.png)
 
-**5.设置摄像头白平衡**
+**设置摄像头白平衡**
 
 调节因为外界光源变化而引起的图像偏色。
 
 ![](./images/Mixly_block_setWB.png)
 
-**6.板载LED灯光设置**
+**板载LED灯光设置**
 
 ![](./images/Mixly_block_setLED.png)
 
-**7.恢复模块默认设置**
+**恢复模块默认设置**
 关闭所有算法，重置所有硬件设置。
 
 ![](./images/Mixly_block_setdefault.png)
 
-**8.获取算法识别结果**
+**获取算法识别结果**
 
 (1) 球、人体
 
@@ -104,15 +105,15 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ## 完整示例
 
-**(1) 颜色识别**
+**颜色识别**
 
 ![](./images/Mixly_example_color_recognition.png)
 
-**(2) 球体检测**
+**球体检测**
 
 ![](./images/Mixly_example_ball_detect.png)
 
-**(3) 形状卡片检测**
+**形状卡片检测**
 
 ![](./images/Mixly_example_card_detect.png)
 

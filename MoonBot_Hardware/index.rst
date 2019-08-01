@@ -6,11 +6,20 @@
 MoonBot 硬件指南
 ===============================
 
-MU Vision Sensor 3 可以与Arduino连接进行开发。
-
 .. toctree::
     :maxdepth: 1
     :glob: 
 	
-    MUVS3_Arduino_Guide_cn_0_8.md
-	
+    MoonBot_Hardware_Guide_cn.md
+    MoonBot_Hardware_controller.md
+    MoonBot_Hardware_MUVS3.md
+    MoonBot_Hardware_battery.md
+    MoonBot_Hardware_motor.md
+    MoonBot_Hardware_servo.md
+    MoonBot_Hardware_speaker.md
+    MoonBot_Hardware_eyes.md
+    MoonBot_Hardware_touch.md
+    MoonBot_Hardware_infrared.md
+
+
+
