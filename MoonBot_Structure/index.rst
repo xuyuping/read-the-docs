@@ -11,7 +11,7 @@ MU Vision Sensor 3 可以与Arduino连接进行开发。
 .. toctree::
     :maxdepth: 1
     :glob: 
-	
+
     MoonRover_Guide_cn.md
     MoonMech_Guide_cn.md
     MoonBot_Guide_cn.md
