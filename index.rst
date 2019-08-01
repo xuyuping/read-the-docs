@@ -22,7 +22,7 @@
     :maxdepth: 1
     :caption: MoonBot Kit 开发教程
     
-	MoonBot/index
+    MoonBot/index
     MoonBot/MoonBot_Hardware/index
     MoonBot/MoonBot_Structure/index
     MoonBot/MoonBot_App/index
