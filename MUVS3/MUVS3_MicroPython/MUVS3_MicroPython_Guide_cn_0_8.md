@@ -51,7 +51,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ## 开启算法
 
-**API：
+**API：**
 
 ```python
 MuVisionSensor.VisionBegin(vision_type)
