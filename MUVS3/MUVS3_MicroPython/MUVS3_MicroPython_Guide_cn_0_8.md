@@ -43,15 +43,15 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 # API使用说明
 
-**初始化传感器**
+## 初始化传感器
 
 1.调用MuVisionSensor(adress)创建一个对象mu，并指定传感器地址，指定的地址要与地址选择拨码开关的设置保持一致
 
 2.调用begin()函数，启动传感器
 
-**开启算法**
+## 开启算法
 
-API：
+**API：
 
 ```python
 MuVisionSensor.VisionBegin(vision_type)
@@ -59,27 +59,18 @@ MuVisionSensor.VisionBegin(vision_type)
 
 目前支持的vision_type有：
 
-| vision_type                | 算法名称     |
-
-| -------------------------- | ------------ |
-
+| vision_type                | 算法名称    |
+| -------------------------- | ----------- |
 | VISION_COLOR_DETECT        | 颜色检测     |
-
 | VISION_COLOR_RECOGNITION   | 颜色识别     |
-
 | VISION_BALL_DETECT         | 球体检测     |
-
 | VISION_BODY_DETECT         | 人体检测     |
-
 | VISION_SHAPE_CARD_DETECT   | 形状卡片检测 |
-
 | VISION_TRAFFIC_CARD_DETECT | 交通卡片检测 |
-
 | VISION_NUM_CARD_DETECT     | 数字卡片检测 |
-
 | VISION_ALL                 | 开启所有算法 |
 
-示例：
+**示例：
 
 ```python
 from MuVisionSensor import *  #导入库
@@ -88,32 +79,35 @@ mu.VisionBegin(VISION_COLOR_DETECT)  #开启颜色检测算法
 mu.VisionBegin(VISION_SHAPE_CARD_DETECT | VISION_BALL_DETECT) #同时开启形状卡片检测和球体检测算法
 ```
 
-**设置算法性能**
+## 设置算法性能
 
-API:
+**API:
 
 ```
 MuVisionSensor.VisionSetLevel(vision_type, level)
 ```
 
 可选的vision_type同上
-可选的level有
 
-LevelDefault 	                 默认
+可选的level有：
 
-LevelSpeed   		         速度优先
+LevelDefault  默认
 
-LevelBalance 		         平衡
+LevelSpeed  速度优先
 
-LevelAccuracy		         准确性优先
+LevelBalance  平衡
 
-示例：
+LevelAccuracy 准确性优先
+
+**示例：
 
 ```
 mu.VisionSetLevel(VISION_BALL_DETECT, LevelSpeed)
 ```
 
-获取算法性能
+### 获取算法性能
+
+**API:
 
 ```
 mu.VisionSetLevel(vision_type)
@@ -121,11 +115,11 @@ mu.VisionSetLevel(vision_type)
 
 返回值0~3代表四种算法性能
 
-**设置摄像头帧率模式**
+## 设置摄像头帧率模式
 
 高帧率模式下识别速度增加，同时功耗增加
 
-API:
+**API:
 
 ```
 MuVisionSensor.CameraSetFPS(mode)
@@ -133,13 +127,13 @@ MuVisionSensor.CameraSetFPS(mode)
 
 可选的mode有：
 
-FPSNormal	          正常模式
+FPSNormal 正常模式
 
-FPSHigh  	          高帧率模式
+FPSHigh 高帧率模式
 
-获取摄像头帧率模式
+### 获取摄像头帧率模式
 
-API:
+**API:
 
 ```
 MuVisionSensor.CameraGetFPS()
@@ -147,11 +141,11 @@ MuVisionSensor.CameraGetFPS()
 
 返回值为 0(FPSNormal)或1(FPSHigh)
 
-**设置摄像头白平衡**
+## 设置摄像头白平衡
 
 调节因为外界光源变化而引起的图像偏色
 
-API:
+**API:
 
 ```
 MuVisionSensor.CameraSetAwb(mode)
@@ -167,9 +161,9 @@ WhiteLight      		白光模式
 
 YellowLight     		黄光模式
 
-获取摄像头白平衡模式
+### 获取摄像头白平衡模式
 
-API:
+**API:
 
 ```
 MuVisionSensor.CameraGetAwb()
@@ -177,9 +171,9 @@ MuVisionSensor.CameraGetAwb()
 
 返回值为 0~3，对应4种白平衡模式
 
-**设置摄像头数码变焦**
+## 设置摄像头数码变焦
 
-API:
+**API:
 
 ```
 MuVisionSensor.CameraSetZoom(mode)
@@ -199,9 +193,9 @@ Zoom4      		        变焦模式4
 
 Zoom5      		        变焦模式5
 
-获取摄像头变焦模式
+### 获取摄像头变焦模式
 
-API:
+**API:
 
 ```
 MuVisionSensor.CameraGetZoom()
@@ -209,9 +203,9 @@ MuVisionSensor.CameraGetZoom()
 
 返回值为 0~5，对应6种白平衡模式
 
-**板载LED灯光设置**
+## 板载LED灯光设置
 
-API:
+**API:
 
 ```
 MuVisionSensor.LedSetColor(led, detected_color, undetected_color, level)
@@ -240,28 +234,29 @@ undetected_color：未检测到结果时的颜色，可选值同上
 
 level：亮度值，可输入0~15的数字，数值越大越亮
 
-**恢复模块默认设置**
+## 恢复模块默认设置
 
 关闭所有算法，重置所有硬件设置
 
-API:
+**API:
 ```
 MuVisionSensor.SensorSetDefault()
 ```
 
-**重启传感器**
+## 重启传感器
 
-API:
+**API:
 ```
 MuVisionSensor.SensorSetRestart()
 ```
 
-**获取算法识别结果**
+## 获取算法识别结果
 
-API:
+**API:
 ```
 MuVisionSensor.GetValue(vision_type, object_inf)
 ```
+
 vision_type的可选值同上
 
 object_inf的可选值为：
