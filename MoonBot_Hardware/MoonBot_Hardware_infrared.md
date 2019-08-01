@@ -25,4 +25,3 @@
 ![](./images/pinout_infrared.png)
 
 ##使用示例
-

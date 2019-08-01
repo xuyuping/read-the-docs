@@ -1,10 +1,12 @@
-# MoonBot 形态介绍
+# MoonBot 形态指南
+
+## MoonBot 介绍
 
 ![](./images/render_MoonBot.png)
 
 ##参数
 
-尺寸：150*137*216
+尺寸：150*137*216 mm
 
 功能
 
@@ -14,6 +16,6 @@
 
 传感：视觉 触摸 测速
 
-# MoonBot 搭建指南
+## MoonBot 搭建指南
 
-# MoonBot 示例程序
+## MoonBot 示例程序

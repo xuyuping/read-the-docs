@@ -6,11 +6,12 @@
 MoonBot 硬件指南
 ===============================
 
+MoonBot共有9种模块
+
 .. toctree::
     :maxdepth: 1
     :glob: 
 
-    MoonBot_Hardware_Guide_cn.md
     MoonBot_Hardware_controller.md
     MoonBot_Hardware_MUVS3.md
     MoonBot_Hardware_battery.md

@@ -6,8 +6,6 @@
 MoonBot 形态指南
 ===============================
 
-MU Vision Sensor 3 可以与Arduino连接进行开发。
-
 .. toctree::
     :maxdepth: 1
     :glob: 
