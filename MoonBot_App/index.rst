@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MoonBot MuBot App 教程
+MoonBot Kit MU Bot App 教程
 ===============================
 
 MU Vision Sensor 3 可以与Arduino连接进行开发。

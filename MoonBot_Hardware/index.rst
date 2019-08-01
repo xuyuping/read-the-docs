@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MoonBot 硬件指南
+MoonBot Kit 硬件指南
 ===============================
 
-MoonBot共有9种模块
+MoonBot Kit共有9种模块
 
 .. toctree::
     :maxdepth: 1

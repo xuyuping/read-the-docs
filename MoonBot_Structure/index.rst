@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MoonBot 形态指南
+MoonBot Kit 形态指南
 ===============================
 
 .. toctree::

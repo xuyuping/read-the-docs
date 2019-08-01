@@ -3,10 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MoonBot 扩展形态
+MoonBot Kit 扩展形态
 ===============================
-
-MU Vision Sensor 3 可以与Arduino连接进行开发。
 
 .. toctree::
     :maxdepth: 1
