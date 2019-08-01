@@ -14,6 +14,8 @@
 
 触摸面规格：直径10mm
 
+**接口图：**
+
 ![](./images/pinout_touch.png)
 
 ## 使用示例
