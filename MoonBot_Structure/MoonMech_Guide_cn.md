@@ -1,6 +1,6 @@
 # MoonMech 形态指南
 
-## MoonMech 介绍
+## 介绍
 
 ![](./images/render_MoonMech.png)
 
@@ -14,6 +14,6 @@
 
 传感：视觉 测速
 
-## MoonMech 搭建指南
+## 搭建指南
 
-## MoonMech 示例程序
+## 示例程序

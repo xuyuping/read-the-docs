@@ -1,6 +1,6 @@
 # MoonBot 形态指南
 
-## MoonBot 介绍
+## 介绍
 
 ![](./images/render_MoonBot.png)
 
@@ -16,6 +16,6 @@
 
 传感：视觉 触摸 测速
 
-## MoonBot 搭建指南
+## 搭建指南
 
-## MoonBot 示例程序
+## 示例程序

@@ -1,6 +1,6 @@
 # MoonRover 形态指南
 
-## MoonRover 介绍
+## 介绍
 
 ![](./images/render_MoonRover.png)
 
@@ -13,6 +13,6 @@
 动作：头部 底盘
 传感：视觉 避障 测速
 
-## MoonRover 搭建指南
+## 搭建指南
 
-## MoonRover 示例程序
+## 示例程序
