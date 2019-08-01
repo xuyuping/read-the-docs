@@ -18,15 +18,15 @@
 
 输出功率：最大5V 2.8A
 
+输出接口：PH2.0 5P
+
 充电功率：最大5V 1A
 
 充电时间：约3.5小时
 
-充电方式：USB type-C
+充电接口：USB type-C
 
-输出接口：PH2.0 5P
-
-接口图：
+**接口图：**
 
 ![](./images/pinout_battery.png)
 
