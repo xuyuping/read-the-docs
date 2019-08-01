@@ -51,7 +51,7 @@ MU Vision Sensor 3的外设和接口如图所示：
 
 ## 开启算法
 
-**API：**
+**API:**
 
 ```python
 MuVisionSensor.VisionBegin(vision_type)
@@ -70,7 +70,7 @@ MuVisionSensor.VisionBegin(vision_type)
 | VISION_NUM_CARD_DETECT     | 数字卡片检测 |
 | VISION_ALL                 | 开启所有算法 |
 
-**示例：
+**示例：**
 
 ```python
 from MuVisionSensor import *  #导入库
@@ -81,7 +81,7 @@ mu.VisionBegin(VISION_SHAPE_CARD_DETECT | VISION_BALL_DETECT) #同时开启�
 
 ## 设置算法性能
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.VisionSetLevel(vision_type, level)
@@ -99,7 +99,7 @@ LevelBalance  平衡
 
 LevelAccuracy 准确性优先
 
-**示例：
+**示例：**
 
 ```
 mu.VisionSetLevel(VISION_BALL_DETECT, LevelSpeed)
@@ -107,7 +107,7 @@ mu.VisionSetLevel(VISION_BALL_DETECT, LevelSpeed)
 
 ### 获取算法性能
 
-**API:
+**API:**
 
 ```
 mu.VisionSetLevel(vision_type)
@@ -119,7 +119,7 @@ mu.VisionSetLevel(vision_type)
 
 高帧率模式下识别速度增加，同时功耗增加
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.CameraSetFPS(mode)
@@ -133,7 +133,7 @@ FPSHigh 高帧率模式
 
 ### 获取摄像头帧率模式
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.CameraGetFPS()
@@ -145,7 +145,7 @@ MuVisionSensor.CameraGetFPS()
 
 调节因为外界光源变化而引起的图像偏色
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.CameraSetAwb(mode)
@@ -163,7 +163,7 @@ YellowLight     		黄光模式
 
 ### 获取摄像头白平衡模式
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.CameraGetAwb()
@@ -173,7 +173,7 @@ MuVisionSensor.CameraGetAwb()
 
 ## 设置摄像头数码变焦
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.CameraSetZoom(mode)
@@ -195,7 +195,7 @@ Zoom5      		        变焦模式5
 
 ### 获取摄像头变焦模式
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.CameraGetZoom()
@@ -205,7 +205,7 @@ MuVisionSensor.CameraGetZoom()
 
 ## 板载LED灯光设置
 
-**API:
+**API:**
 
 ```
 MuVisionSensor.LedSetColor(led, detected_color, undetected_color, level)
@@ -238,21 +238,21 @@ level：亮度值，可输入0~15的数字，数值越大越亮
 
 关闭所有算法，重置所有硬件设置
 
-**API:
+**API:**
 ```
 MuVisionSensor.SensorSetDefault()
 ```
 
 ## 重启传感器
 
-**API:
+**API:**
 ```
 MuVisionSensor.SensorSetRestart()
 ```
 
 ## 获取算法识别结果
 
-**API:
+**API:**
 ```
 MuVisionSensor.GetValue(vision_type, object_inf)
 ```
