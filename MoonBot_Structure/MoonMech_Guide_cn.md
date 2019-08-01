@@ -4,9 +4,9 @@
 
 ![](./images/render_MoonMech.png)
 
-##参数
+## 参数
 
-尺寸：271*137*244 mm
+尺寸：271 x 137 x 244 mm
 
 功能
 

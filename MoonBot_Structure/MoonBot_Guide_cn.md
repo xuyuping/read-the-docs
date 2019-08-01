@@ -4,9 +4,9 @@
 
 ![](./images/render_MoonBot.png)
 
-##参数
+## 参数
 
-尺寸：150*137*216 mm
+尺寸：150 x 137 x 216 mm
 
 功能
 

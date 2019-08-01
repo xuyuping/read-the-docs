@@ -4,9 +4,9 @@
 
 ![](./images/render_MoonRover.png)
 
-##参数
+## 参数
 
-尺寸：177*157*87 mm
+尺寸：177 x 157 x 87 mm
 
 功能
 
