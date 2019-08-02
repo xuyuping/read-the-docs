@@ -6,7 +6,7 @@
 MUVS3 Makecode 教程
 ===============================
 
-MU Vision Sensor 3 可以与Arduino连接进行开发。
+本文介绍MU Vision Sensor 3 和Micro:bit开发板在Makecode环境中开发的教程。
 
 .. toctree::
     :maxdepth: 1
