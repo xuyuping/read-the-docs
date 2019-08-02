@@ -1,4 +1,4 @@
-# MoonMech 形态指南
+# MoonMech 指南
 
 ## 介绍
 
