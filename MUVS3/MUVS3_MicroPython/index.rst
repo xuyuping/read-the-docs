@@ -6,7 +6,7 @@
 MUVS3 MicroPython 教程
 ===============================
 
-MU Vision Sensor 3 可以与Arduino连接进行开发。
+本文介绍MU Vision Sensor 3与Micro:bit通过MicroPython进行编程开发的教程。
 
 .. toctree::
     :maxdepth: 1
