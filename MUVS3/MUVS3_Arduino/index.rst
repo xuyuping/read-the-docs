@@ -6,7 +6,7 @@
 MUVS3 Arduino 教程
 ===============================
 
-MU Vision Sensor 3 可以与Arduino连接进行开发。
+本文介绍MU Vision Sensor 3 配合Arduino开发板使用Arduino IDE进行开发的教程。
 
 .. toctree::
     :maxdepth: 1
