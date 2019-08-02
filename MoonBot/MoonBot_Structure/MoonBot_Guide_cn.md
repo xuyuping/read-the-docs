@@ -1,4 +1,4 @@
-# MoonBot 形态指南
+# MoonBot 指南
 
 ## 介绍
 
