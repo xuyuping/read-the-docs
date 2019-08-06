@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MU Vision Sensor 资源
+关于本网站
 ===============================
 
 .. toctree::
     :maxdepth: 1
     :glob: 
 	
-    Source_MUVS3.md
+    Resource_thisWebsite.md
 	
