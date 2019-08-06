@@ -22,6 +22,12 @@
 	
 .. toctree::
     :maxdepth: 1
+    :caption: 3D打印的日常
+	
+    printingDaily/index
+	
+.. toctree::
+    :maxdepth: 1
     :caption: 相关资源
 	
     Sources/index
