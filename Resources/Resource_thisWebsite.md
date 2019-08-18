@@ -6,11 +6,11 @@
 
 # 平台链接
 
-**Mixly:
+**Mixly:**
 
 Mixly官网 <http://mixly.org/>
 
-**Arduino：
+**Arduino:**
 
 Arduino官网 <https://www.arduino.cc/>
 
@@ -20,11 +20,11 @@ DF创客社区 <http://mc.dfrobot.com.cn/>
 
 极客工坊 <https://www.geek-workshop.com/forum.php>
 
-**Micro:bit:
+**Micro:bit:**
 
 Micro:bit官网 <https://microbit.org/zh-CN/>
 
-**MicroPython:
+**MicroPython:**
 
 MicroPython官网 <http://micropython.org/>
 
