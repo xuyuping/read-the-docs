@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, xuyuping
+# This file is distributed under the same license as the 老徐的文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 老徐的文档 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 15:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:1
+msgid "3D打印机结构"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:3
+msgid ""
+"FDM "
+"3D打印机的常见结构有笛卡尔xyz型、delta三角洲、机械臂型（SCARA、码垛、六轴等）的形式。笛卡尔机型是最常用的结构形式，类似于普通的机床，结构简单且稳定。整体外形上有箱式结构、龙门式结构、单悬臂结构等。"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:7
+msgid "xy平面结构上有普通直接式、corexy、ultimaker型等。"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:9
+msgid "DLP/LCD光固化3D打印机只需要一个z轴移动和固化灯，结构较为简单，主要考验软件和材料。"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:11
+msgid "SLA/SLS常用作工业使用，设备几十万到几百万，精度高，用未来工厂等云平台打样比较合适。"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:13
+msgid "总体结构"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:15
+msgid "机械臂包含了底盘、主转臂、副转臂、三角连接架、前转臂和3副连接杆等组件"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:19
+msgid "首先介绍底盘组件"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:21
+msgid "底盘组件"
+msgstr ""
+
+#: ../../x3dPrinter/x3dPrinterStructure.md:23
+msgid "底盘部分由上下两部分组成"
+msgstr ""
+

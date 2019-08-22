@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, xuyuping
+# This file is distributed under the same license as the 老徐的文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 老徐的文档 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 15:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../Resources/Resource_thisWebsite.md:1
+msgid "网站来源"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:3
+msgid ""
+"这个技术网站是本人为公司建立技术站时顺便建立的。 "
+"之前捣鼓的一些个人网站或博客的形式，包括现成的wordpress框架或自建的树莓派服务器，都没有继续再更新，可能用这种read the "
+"docs技术文档的形式会 有一些更新的动力，flag先立着。"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:7
+msgid "平台链接"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:9
+msgid "Mixly:"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:11
+msgid "Mixly官网 http://mixly.org/"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:13
+msgid "Arduino:"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:15
+msgid "Arduino官网 https://www.arduino.cc/"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:17
+msgid "Arduino中文社区 https://www.arduino.cn/forum.php"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:19
+msgid "DF创客社区 http://mc.dfrobot.com.cn/"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:21
+msgid "极客工坊 https://www.geek-workshop.com/forum.php"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:23
+msgid "Micro:bit:"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:25
+msgid "Micro:bit官网 https://microbit.org/zh-CN/"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:27
+msgid "MicroPython:"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:29
+msgid "MicroPython官网 http://micropython.org/"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:31
+msgid "MicroPython中文社区 http://www.micropython.org.cn/bbs/forum.php"
+msgstr ""
+
+#: ../../Resources/Resource_thisWebsite.md:33
+msgid "Mu IDE https://codewith.mu/"
+msgstr ""
+

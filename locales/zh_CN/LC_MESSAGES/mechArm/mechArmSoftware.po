@@ -1,0 +1,27 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, xuyuping
+# This file is distributed under the same license as the 老徐的文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 老徐的文档 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 15:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../mechArm/mechArmSoftware.md:1
+msgid "机械臂软件"
+msgstr ""
+
+#: ../../mechArm/mechArmSoftware.md:3
+msgid "桌面机械臂使用的软件是marlin的定制版。和普通的3D打印机类似，机械臂也是通过G代码控制xyz的位置。通过坐标转换，可以将机械臂的坐标转到笛卡尔坐标系。这一转换类似于SCARA机型，相当于将SCARA转90度放置，且z轴变为旋转。目前marlin的configuration文件夹下似乎没有专门的码垛机械臂适配参数，故手动添加这一项修改。"
+msgstr ""
+

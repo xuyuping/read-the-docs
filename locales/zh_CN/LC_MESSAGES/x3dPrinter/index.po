@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, xuyuping
+# This file is distributed under the same license as the 老徐的文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 老徐的文档 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 15:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../x3dPrinter/index.rst:7
+msgid "x3d打印机项目"
+msgstr ""
+
+#: ../../x3dPrinter/index.rst:9
+msgid "这是一个模块化的FDM 3D打印机，立足于低成本、高精度、多功能、高速等特点。"
+msgstr ""
+
+#: ../../x3dPrinter/index.rst:11
+msgid "不仅可以进行3D打印，同时也可以通过换喷头来实现CNC加工、激光雕刻、写字机等功能。"
+msgstr ""
+
