@@ -67,6 +67,9 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+locale_dirs = ['locales/']   # path is example but recommended.
+gettext_compact = False     # optional.
+
 
 # -- Options for HTML output -------------------------------------------------
 

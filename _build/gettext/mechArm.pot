@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, xuyuping
+# This file is distributed under the same license as the 老徐的文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 老徐的文档 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 15:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../mechArm/index.rst:7
+msgid "机械臂项目"
+msgstr ""
+
+#: ../../mechArm/index.rst:9
+msgid "这是一个易于制作的模块化桌面级机械臂，可用于学习工业机器人相关理论， 做一些轻量级的生产应用。"
+msgstr ""
+
+#: ../../mechArm/mechArmHardware.md:1
+msgid "机械臂硬件"
+msgstr ""
+
+#: ../../mechArm/mechArmHardware.md:3
+#: ../../mechArm/mechArmTheory.md:3
+msgid "理论内容"
+msgstr ""
+
+#: ../../mechArm/mechArmHardware.md:5
+#: ../../mechArm/mechArmStructure.md:5
+#: ../../mechArm/mechArmTheory.md:5
+msgid "机械臂包含了底盘、主转臂、副转臂、三角连接架、前转臂和3副连接杆等组件"
+msgstr ""
+
+#: ../../mechArm/mechArmHardware.md:7
+#: ../../mechArm/mechArmStructure.md:9
+#: ../../mechArm/mechArmTheory.md:7
+msgid "首先介绍底盘组件"
+msgstr ""
+
+#: ../../mechArm/mechArmHardware.md:9
+#: ../../mechArm/mechArmTheory.md:9
+msgid "运动范围"
+msgstr ""
+
+#: ../../mechArm/mechArmHardware.md:11
+#: ../../mechArm/mechArmStructure.md:13
+#: ../../mechArm/mechArmTheory.md:11
+msgid "底盘部分由上下两部分组成"
+msgstr ""
+
+#: ../../mechArm/mechArmSoftware.md:1
+msgid "机械臂软件"
+msgstr ""
+
+#: ../../mechArm/mechArmSoftware.md:3
+msgid "桌面机械臂使用的软件是marlin的定制版。和普通的3D打印机类似，机械臂也是通过G代码控制xyz的位置。通过坐标转换，可以将机械臂的坐标转到笛卡尔坐标系。这一转换类似于SCARA机型，相当于将SCARA转90度放置，且z轴变为旋转。目前marlin的configuration文件夹下似乎没有专门的码垛机械臂适配参数，故手动添加这一项修改。"
+msgstr ""
+
+#: ../../mechArm/mechArmStructure.md:1
+msgid "机械臂结构"
+msgstr ""
+
+#: ../../mechArm/mechArmStructure.md:3
+msgid "总体结构"
+msgstr ""
+
+#: ../../mechArm/mechArmStructure.md:11
+msgid "底盘组件"
+msgstr ""
+
+#: ../../mechArm/mechArmTheory.md:1
+msgid "机械臂理论"
+msgstr ""
+
