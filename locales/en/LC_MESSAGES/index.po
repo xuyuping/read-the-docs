@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, xuyuping
+# This file is distributed under the same license as the 老徐的文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 老徐的文档 \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 14:58+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../index.rst:7
+msgid "欢迎来到老徐的文档"
+msgstr "Welcome to document of Lao Xu"
+
+#: ../../index.rst:9
+msgid "机械臂项目"
+msgstr "MechArm Project"
+
+#: ../../index.rst:15
+msgid "x3d打印机项目"
+msgstr "x3d printer Project"
+
+#: ../../index.rst:21
+msgid "3D打印的日常"
+msgstr "Daily 3D printing"
+
+#: ../../index.rst:27
+msgid "相关资源"
+msgstr "Resources"
+
