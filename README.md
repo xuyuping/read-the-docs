@@ -2,4 +2,4 @@
 
 老徐的技术文档
 
-Website：<https://xyp-docs.readthedocs.io/zh_CN/latest/>
+Website：<https://xyp-docs.readthedocs.io/>
