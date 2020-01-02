@@ -9,3 +9,7 @@
 JJ集线器
 
 ![](./images/concentrator_JJ.jpg)
+
+马桶按钮
+
+![](./images/toilet_button.jpg)
