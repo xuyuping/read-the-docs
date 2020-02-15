@@ -8,6 +8,12 @@
 
 .. toctree::
     :maxdepth: 1
+    :caption: 电动滑板项目
+	
+    eSkateboard/index
+
+.. toctree::
+    :maxdepth: 1
     :caption: 机械臂项目
 	
     mechArm/index
