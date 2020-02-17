@@ -103,7 +103,7 @@ html_static_path = ['_static']
 
 html_search_language = 'zh'
 
-html_favicon = '_static/icon_mu.png'
+html_favicon = '_static/icon_xyp.png'
 
 html_logo = '_static/logo_xyp.png'
 
