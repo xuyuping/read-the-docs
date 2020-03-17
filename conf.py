@@ -108,7 +108,7 @@ html_favicon = '_static/icon_xyp.png'
 html_logo = '_static/logo_xyp.png'
 
 html_theme_options = {
-    'style_nav_header_background': "#FF9804",
+    'style_nav_header_background': "#FFFF00",
     'display_version': False,
     #'canonical_url': '',
     #'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
